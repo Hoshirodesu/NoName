@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=3 uid="uid://bv351hswtc18y"]
+
+[ext_resource type="Texture2D" uid="uid://pk8y32w3dx66" path="res://Basic movement/floor.png" id="1_txhjd"]
+[ext_resource type="PackedScene" uid="uid://ry7olmvs0551" path="res://Basic movement/player.tscn" id="2_p8cfg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_21ovk"]
+size = Vector2(3708, 161)
+
+[sub_resource type="Theme" id="Theme_k7hyx"]
+
+[node name="World" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1786, 596)
+shape = SubResource("RectangleShape2D_21ovk")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+modulate = Color(0.16446, 0.16446, 0.16446, 1)
+position = Vector2(1784.5, 622)
+scale = Vector2(3.33964, 2.58537)
+texture = ExtResource("1_txhjd")
+
+[node name="Player" parent="." instance=ExtResource("2_p8cfg")]
+position = Vector2(175, 361)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2(0, -100)
+limit_left = 0
+limit_right = 100000
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+editor_draw_limits = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 74.0
+offset_top = 202.0
+offset_right = 324.0
+offset_bottom = 329.0
+theme = SubResource("Theme_k7hyx")
+text = "Control:
+Forward: [A]
+Backward: [D]
+jump: [W]
+dash: [Space]"

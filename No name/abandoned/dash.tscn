@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnsa22vfp524k"]
+
+[ext_resource type="Script" path="res://abandoned/Dash.gd" id="1_i48xo"]
+
+[node name="Dash" type="Node2D"]
+script = ExtResource("1_i48xo")
+
+[node name="DashTimer" type="Timer" parent="."]
+one_shot = true

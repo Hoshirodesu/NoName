@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://ry7olmvs0551"]
+
+[ext_resource type="Texture2D" uid="uid://dit2iu3mvlyhd" path="res://Basic movement/player.png" id="1_d3kc7"]
+[ext_resource type="Script" path="res://Basic movement/player.gd" id="1_fk1wb"]
+[ext_resource type="PackedScene" uid="uid://dnsa22vfp524k" path="res://abandoned/dash.tscn" id="3_gog58"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmevh"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_fk1wb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("1_d3kc7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2.41, 2.41)
+shape = SubResource("RectangleShape2D_hmevh")
+
+[node name="Dash" parent="." instance=ExtResource("3_gog58")]
+
+[node name="dash_timer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="dash_again" type="Timer" parent="."]
+
+[connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="dash_again" to="." method="_on_dash_again_timeout"]

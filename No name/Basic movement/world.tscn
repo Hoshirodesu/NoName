@@ -40,7 +40,7 @@ offset_right = 324.0
 offset_bottom = 329.0
 theme = SubResource("Theme_k7hyx")
 text = "Control:
-Forward: [A]
-Backward: [D]
+Backward: [A]
+Forward: [D]
 jump: [W]
 dash: [Space]"

@@ -1,0 +1,14 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1722778693
+::res://abandoned/::1722772464
+CharacterBody2D.gd::GDScript::-1::1722772464::0::1::::<>CharacterBody2D<>::
+Dash.gd::GDScript::-1::1722772464::0::1::::<>Node2D<>::
+dash.tscn::PackedScene::8108925485202012432::1722772464::0::1::::<><>::res://abandoned/Dash.gd
+DashTimer.gd::GDScript::-1::1722772464::0::1::::<>RefCounted<>::
+::res://Basic movement/::1722772464
+floor.png::CompressedTexture2D::1075524465326759921::1722772464::1722778695::1::::<><>::
+icon.svg::CompressedTexture2D::3956581866738097250::1722772464::1722778695::1::::<><>::
+player.gd::GDScript::-1::1722772464::0::1::::<>CharacterBody2D<>::
+player.png::CompressedTexture2D::7761650716961906681::1722772464::1722778695::1::::<><>::
+player.tscn::PackedScene::1244723950100901398::1722772464::0::1::::<><>::uid://dit2iu3mvlyhd::::res://Basic movement/player.png<>res://Basic movement/player.gd<>uid://dnsa22vfp524k::::res://abandoned/dash.tscn
+world.tscn::PackedScene::3920057314124986082::1722772464::0::1::::<><>::uid://pk8y32w3dx66::::res://Basic movement/floor.png<>uid://ry7olmvs0551::::res://Basic movement/player.tscn

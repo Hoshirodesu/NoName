@@ -1,14 +1,29 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722778693
+::res://::1723203246
 ::res://abandoned/::1722772464
 CharacterBody2D.gd::GDScript::-1::1722772464::0::1::::<>CharacterBody2D<>::
 Dash.gd::GDScript::-1::1722772464::0::1::::<>Node2D<>::
 dash.tscn::PackedScene::8108925485202012432::1722772464::0::1::::<><>::res://abandoned/Dash.gd
 DashTimer.gd::GDScript::-1::1722772464::0::1::::<>RefCounted<>::
-::res://Basic movement/::1722772464
+::res://Assets/::1723198166
+::res://Assets/images/::1723204895
+IMG_20240809_010539.png::CompressedTexture2D::385295656230070311::1723193545::1723193546::1::::<><>::
+IMG_20240809_162351.png::CompressedTexture2D::8323341176347243541::1723195480::1723195481::1::::<><>::
+spritesheet2.png::CompressedTexture2D::6848768640004503991::1723197585::1723197585::1::::<><>::
+spritesheet4.png::CompressedTexture2D::8183728501747767700::1723198160::1723198167::1::::<><>::
+spritesheet5.png::CompressedTexture2D::618398570605872645::1723202564::1723202565::1::::<><>::
+spritesheet6.png::CompressedTexture2D::2432190977228233907::1723204895::1723204895::1::::<><>::
+spritesheet.png::CompressedTexture2D::400008587665113292::1723197500::1723197509::1::::<><>::
+::res://Assets/textures/::1723193588
+attack1.png::CompressedTexture2D::4308475141598171837::1723193545::1723193588::1::::<><>::
+attack2.png::CompressedTexture2D::3999030321939764159::1723193545::1723193588::1::::<><>::
+attack3.png::CompressedTexture2D::8236020652834247238::1723193545::1723193588::1::::<><>::
+idle.png::CompressedTexture2D::3340684474180185661::1723193545::1723193588::1::::<><>::
+::res://Basic movement/::1723204295
 floor.png::CompressedTexture2D::1075524465326759921::1722772464::1722778695::1::::<><>::
 icon.svg::CompressedTexture2D::3956581866738097250::1722772464::1722778695::1::::<><>::
-player.gd::GDScript::-1::1722772464::0::1::::<>CharacterBody2D<>::
+player.gd::GDScript::-1::1723204295::0::1::::<>CharacterBody2D<>::
 player.png::CompressedTexture2D::7761650716961906681::1722772464::1722778695::1::::<><>::
-player.tscn::PackedScene::1244723950100901398::1722772464::0::1::::<><>::uid://dit2iu3mvlyhd::::res://Basic movement/player.png<>res://Basic movement/player.gd<>uid://dnsa22vfp524k::::res://abandoned/dash.tscn
-world.tscn::PackedScene::3920057314124986082::1722772464::0::1::::<><>::uid://pk8y32w3dx66::::res://Basic movement/floor.png<>uid://ry7olmvs0551::::res://Basic movement/player.tscn
+player.tscn::PackedScene::1244723950100901398::1723204295::0::1::::<><>::res://Basic movement/player.gd<>uid://i2s603hdu18l::::res://Assets/images/spritesheet5.png<>uid://dnsa22vfp524k::::res://abandoned/dash.tscn
+Sword.png::CompressedTexture2D::634541916372119712::1723137944::1723137956::1::::<><>::
+world.tscn::PackedScene::3920057314124986082::1723204295::0::1::::<><>::uid://pk8y32w3dx66::::res://Basic movement/floor.png<>uid://ry7olmvs0551::::res://Basic movement/player.tscn

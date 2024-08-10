@@ -15,6 +15,8 @@ var current_jumps = 1
 const dashspeed = 800
 const dashlength = 10
 
+@onready var sprite = $Sprite2D
+
 func _physics_process(delta):
 	var input_dir: Vector2 = input()
 	print(input_dir)
@@ -30,6 +32,11 @@ func _physics_process(delta):
 	else:
 		velocity.x = input_dir.x * speed
 	
+	if Input.is_action_just_pressed("attack"):
+		$AnimationPlayer.play("attack")
+		print("Attack")
+		
+	
 	#if Input.is_action_just_pressed("ui_accept"):
 		#dash.start_dash(dashlength)
 	#var speed = dashspeed if dash.is_dashing() else normalspeed
@@ -44,7 +51,6 @@ func _physics_process(delta):
 
 func input() -> Vector2:
 	var input_dir = Vector2.ZERO
-	
 	input_dir.x = Input.get_axis("backward", "forward")
 	input_dir = input_dir.normalized()
 	return input_dir
